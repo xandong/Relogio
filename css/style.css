@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+:root{
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px ;
+}
+header h1{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    width: max-content;
+    padding: 5px 20px;
+    border-radius: 80px;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main{
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock{
+    width: 100%;
+}
+
+/* Clock Styles*/
+.circle{
+    fill: none;
+    stroke: black;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle{
+    fill: #000;
+}
+.hour-marks{
+    fill: none;
+    stroke: red;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm{
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm{
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm{
+    fill: none;
+    stroke: red;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+
+/* Caixa transparante que engloba todas os ponteiros*/
+.sizing-box{
+    fill: none;
+}
+
+/* Faz com que ponteiros caminhem ao redor do central*/
+#hour,
+#minute,
+#second{
+    transform-origin: 300px 300px;
+    /*transition: transform 0.9s ease-in-out ;*/
+}
+#hour{
+    transform: rotate(50deg)
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    height: 50px;
+}
+footer p{
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a{
+    color: black;
+    font-weight: bold;
+    text-indent: 0px;
+    text-decoration: none;
+    transition-delay: 0.2;
+    transition-duration: 1s;
+}
+footer a:hover{
+    transition-duration: 0.5s;
+    color: blue;
+}
